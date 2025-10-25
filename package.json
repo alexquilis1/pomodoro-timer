@@ -31,6 +31,7 @@
   "build": {
     "appId": "com.alexquilis.pomodoro",
     "productName": "Pomodoro Timer",
+    "artifactName": "Pomodoro-Timer-${os}-${version}.${ext}",
     "directories": {
       "output": "release"
     },
@@ -54,12 +55,16 @@
       "compression": "maximum"
     },
     "nsis": {
+      "artifactName": "Pomodoro-Timer-Setup-${version}.exe",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "allowElevation": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "Pomodoro Timer"
+    },
+    "portable": {
+      "artifactName": "Pomodoro-Timer-Portable-${version}.zip"
     }
   }
 }
